@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="IV.css">
+<body class="body1">
+    <h1 class="h1"><center>Greetings!!! This is the IP Project. Our Topic is to create 'Typing text animation'</center></h1><br>
+    <h1 class="h2"><center>We have created and representing it in the form of our group member's name and roll numbers</center></h1><br><br>
+    
+    <div class="container">
+        <span class="text first-text">ROLL NO.</span>
+        <span class="text sec-text">    6. Atharva Shinde</span>
+    </div>
+    <script>
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "6. Atharva Shinde";
+            },0);
+            setTimeout(() => {
+                text.textContent = "7. Sairaj Shinde";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "8. Harsh Shrivastava";
+            }, 10000);
+            setTimeout(() => {
+                text.textContent = "9. Arvind Shukla";
+            }, 14000); 
+            setTimeout(() =>
+            {
+                text.textContent = "10. Khushi Shukla";
+            }, 20000);
+        }
+        textLoad();
+        setInterval(textLoad, 24000);
+    </script>  
+</body>
+</html>
+
